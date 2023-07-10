@@ -11,52 +11,54 @@ such as ',' we wouldn't want to split on that... This approach may result in get
 ## First approach: using regular 'reader' method
 import csv
 
-html_output = ''
+html_output = ""
 ##first we will create the variable that we desired to be our end goal and populate it as we go
 names = []
 ##we also know that we need to capture every name to put into our output, hence the empty list
 
-with open('patrons.csv', 'r') as data_file:
+with open("patrons.csv", "r") as data_file:
     csv_data = csv.reader(data_file)
 
     ##We don't want the headers or first line of bad data so we skip the first two lines
     next(csv_data)
     next(csv_data)
 
-#     for line in csv_data:
-#         names.append(f'{line[0]} {line[1]}')
+    #     for line in csv_data:
+    #         names.append(f'{line[0]} {line[1]}')
 
-# for name in names:
-#     print(name)
-## We got all the names in the list, but we have to get rid of the opted out ones
-## We simply can add a condition that stops upon coming across the opted out members
+    # for name in names:
+    #     print(name)
+    ## We got all the names in the list, but we have to get rid of the opted out ones
+    ## We simply can add a condition that stops upon coming across the opted out members
 
     for line in csv_data:
-        if line[0] == 'No Reward':
+        if line[0] == "No Reward":
             break
-        names.append(f'{line[0]} {line[1]}')
+        names.append(f"{line[0]} {line[1]}")
 
-html_output += f'<p>There are currently {len(names)} public contributors. Thank you!</p>'
+html_output += (
+    f"<p>There are currently {len(names)} public contributors. Thank you!</p>"
+)
 
-html_output += '\n<ul>'
+html_output += "\n<ul>"
 
 for name in names:
-    html_output += f'\n\t<li>{name}</li>'
+    html_output += f"\n\t<li>{name}</li>"
 
-html_output += '\n</ul>'
+html_output += "\n</ul>"
 """html tags that we added in:
 <p> - paragraph, <ul> - unordered list, <li> - list item
 plus we used '\n' for new line, '\t' for tab space to make our code look better"""
 
 print(html_output)
-#-------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
 ## Second approach: using 'DictReader' method (more readable code)
 import csv
 
-html_output = ''
+html_output = ""
 names = []
 
-with open('patrons.csv', 'r') as data_file:
+with open("patrons.csv", "r") as data_file:
     csv_data = csv.DictReader(data_file)
 
     ##We don't want first line of bad data for that reason we need to skip a line
@@ -65,18 +67,20 @@ with open('patrons.csv', 'r') as data_file:
 
     for line in csv_data:
         ##With 'DictReader' method we can now use the keys of first name and last name to construct our logic
-        if line['FirstName'] == 'No Reward':
+        if line["FirstName"] == "No Reward":
             break
         names.append(f"{line['FirstName']} {line['LastName']}")
 
-html_output += f'<p>There are currently {len(names)} public contributors. Thank you!</p>'
+html_output += (
+    f"<p>There are currently {len(names)} public contributors. Thank you!</p>"
+)
 
-html_output += '\n<ul>'
+html_output += "\n<ul>"
 
 for name in names:
-    html_output += f'\n\t<li>{name}</li>'
+    html_output += f"\n\t<li>{name}</li>"
 
-html_output += '\n</ul>'
+html_output += "\n</ul>"
 """html tags that we added in:
 <p> - paragraph, <ul> - unordered list, <li> - list item
 plus we used '\n' for new line, '\t' for tab space to make our code look better"""

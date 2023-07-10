@@ -20,7 +20,7 @@
 
 # if __name__ == '__main__':
 #     unittest.main()
-#-------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
 ##Let's add in a few more tests
 ##instead of setting a 'result' variable and testing that, we can drop our function directly to the assert statement
 import unittest
@@ -51,13 +51,13 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(calc.divide(-1, -1), 1)
         self.assertEqual(calc.divide(5, 2), 2.5)
         ##test of dividing a number by zero
-        #self.assertRaises(ValueError, calc.divide, 10, 0)
+        # self.assertRaises(ValueError, calc.divide, 10, 0)
         ##easier approach via using the context manager:
         with self.assertRaises(ValueError):
             calc.divide(10, 0)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
-#-------------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------------
 ##Let's try more complex tests
