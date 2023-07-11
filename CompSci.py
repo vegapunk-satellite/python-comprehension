@@ -1,40 +1,3 @@
-##Following sets of examples are originally from 'Corey Schafer's Python Guide', playlist from Youtube tweaked by me
-for num in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]:
-   print(num)
-#-------------------------------------------------------------------------------------
-message = "Hello World"
-
-print(len(message))
-print(message[:5])
-print(message[6:])
-#-------------------------------------------------------------------------------------
-my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-print(my_list[-2:1:-1])
-#-------------------------------------------------------------------------------------
-sample_url = "https://inventwithpython.com"
-print(sample_url[8:-4:])
-#-------------------------------------------------------------------------------------
-message = "Hide a tree in a forest, Hide a ship in ships."
-print(message.count("s"))
-parallel_universe_message = message.replace('ships', 'docks')
-print(parallel_universe_message)
-#-------------------------------------------------------------------------------------
-hello = "Greetings"
-name = "dear customer"
-
-automated_store_message = "{} {}! Would you like to have Senbei or Okaki?".format(hello, name)
-print(automated_store_message)
-#-------------------------------------------------------------------------------------
-##formating
-person = {'name': 'Jenn', 'age': 23}
-sentence = 'My name is {0[name]} and I am {0[age]} years old.'.format(person)
-print(sentence)
-#-------------------------------------------------------------------------------------
-tag = "hl"
-text = "This is a headline"
-
-sentence = "<{0}> {1} <{0}>".format(tag, text)
-print(sentence)
 #-------------------------------------------------------------------------------------
 class Person():
 
@@ -77,15 +40,6 @@ print(reformatted)
 ##Reshaping the output to example: 'Month XX, XXXX fell on a Day and was the XXX day of the year' format
 sentence = '{0:%B %d, %Y} fell on a {0:%A} and was the {0:%j} day of the year'.format(my_date)
 print(sentence)
-#-------------------------------------------------------------------------------------
-##f string
-
-greeting = 'Greetings dear customer'
-statement = 'Welcome to the world of the future!'
-
-message = f'{greeting}, {statement}. Please mark the locations you wished to visit and enjoy the ride.'
-
-print(message)
 #-------------------------------------------------------------------------------------
 ##Arithmetic Operators: # $ #
 ##Addition:             3 + 2
