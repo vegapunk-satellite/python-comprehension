@@ -1,45 +1,4 @@
-#-------------------------------------------------------------------------------------
-class Person():
 
-   def __init__(self, name, age):
-       self.name = name
-       self.age = age
-
-person_one = Person('Shanks', '39')
-person_two = Person('Luffy', '19')
-
-sentence_one = 'My name is {0.name} and I am {0.age} years old.'.format(person_one)
-sentence_two = 'My name is {0.name} and I am {0.age} years old.'.format(person_two)
-print(sentence_one)
-print(sentence_two)
-#-------------------------------------------------------------------------------------
-person = {'name': 'Jenn', 'age': 23}
-sentence = 'My name is {name} and I am {age} years old.'.format(**person)
-print(sentence)
-#-------------------------------------------------------------------------------------
-for i in range(1, 11):
-   counter = 'The value is {}'.format(i)
-   print(counter)
-#-------------------------------------------------------------------------------------
-pi = 3.14159265
-
-sentence = 'Pi is equal to {:.2f}'.format(pi)
-print(sentence)
-#-------------------------------------------------------------------------------------
-sentence = '1 MB is equal to {:,} bytes'.format(1000 ** 2)
-print(sentence)
-#-------------------------------------------------------------------------------------
-import datetime
-
-my_date = datetime.datetime(1513, 5, 5, 10, 20, 56)
-print(my_date)
-##Reshaping the output to example: 'Month XX, XXXX' format
-reformatted = '{:%B %d, %Y}'.format(my_date)
-print(reformatted)
-
-##Reshaping the output to example: 'Month XX, XXXX fell on a Day and was the XXX day of the year' format
-sentence = '{0:%B %d, %Y} fell on a {0:%A} and was the {0:%j} day of the year'.format(my_date)
-print(sentence)
 #-------------------------------------------------------------------------------------
 ##Arithmetic Operators: # $ #
 ##Addition:             3 + 2

@@ -1,8 +1,9 @@
 # String Formating:
+# Accessing values within dictionaries:
 person_dict = {"name": "Jenn", "age": 23}
-# We could have used 'string concatenation';
-# But it is not so readable. If user has an integer; it needs to be cast into a string before being used.
-# Plus it leaves room for a lot of mistakes.
+# We could have used 'string concatenation'; but it is not so readable.
+# If user has an integer; it needs to be cast into a string before being used.
+# Plus it leaves room for a lot of small mistakes.
 
 # So, formating is a nice option. A lot easier to read...
 # The braces('{}') are placeholders and after our string closes we run the '.format()' method.
