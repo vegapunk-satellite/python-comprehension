@@ -1,31 +1,4 @@
 
-num = 1
-num *= 10
-
-print(num)
-
-print(abs(-24))
-
-print(round(3.53286575, 2))
-#-------------------------------------------------------------------------------------
-##Comparisons:          # ? # **returns Boolean**
-##Equal:                3 == 2
-##Not Equal:            3 != 2
-##Greater Than:         3 > 2
-##Less Than:            3 < 2
-##Greater or Equal:     3 >= 2
-##Less or Equal:        3 <= 2
-
-num_1 = '56'
-num_2 = '29'
-
-print(num_1 + num_2) will end up concatenating strings
-data type should be converted to an 'int'
-
-n_1 = int(num_1)
-n_2 = int(num_2)
-print(n_1 + n_2)
-
 courses = ['History', 'Math', 'Physics', 'CompSci']
 courses_2 = ['Art', 'Geography']
 nums = [1, 6, 5, 7, 4, 9, 2, 3, 8]
