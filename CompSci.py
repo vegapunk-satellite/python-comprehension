@@ -1,20 +1,4 @@
-
-#-------------------------------------------------------------------------------------
-##loops
-##***'break' quits the loop, while 'continue' moves on with the next iteration***
-nums = [1, 2, 3, 4, 5]
-
-for num in nums:
-    for letter in 'abc':
-        print(num, letter)
-
-x = 0
-
-while x < 10:
-    print(x)
-    x +=1
-#-------------------------------------------------------------------------------------
-##Functions
+#Functions
 ##Keep your code 'DRY' --do not repeat yourself
 def hello_func():
     print('Hello Function!')
