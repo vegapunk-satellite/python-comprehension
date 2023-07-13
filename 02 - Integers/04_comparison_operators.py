@@ -1,12 +1,14 @@
 # Boolean values are one of the data types, these values will either return true or false.
 # We'll be taking a closer look at them on the 'conditionals' scipts up ahead.
-# Comparisons:  (always returns Boolean)
-# Equal:                ==
-# Not Equal:            !=
-# Greater Than:         >
-# Less Than:            <
-# Greater or Equal:     >=
-# Less or Equal:        <=
+"""
+Comparisons:  (always returns Boolean)
+Equal:                ==
+Not Equal:            !=
+Greater Than:         >
+Less Than:            <
+Greater or Equal:     >=
+Less or Equal:        <=
+"""
 
 num_1 = 56
 num_2 = 29

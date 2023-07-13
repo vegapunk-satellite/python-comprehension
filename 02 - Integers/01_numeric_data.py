@@ -5,15 +5,16 @@ num_pi = 3.14
 print(type(num))
 print(type(num_pi))
 
-
-# Arithmetic Operators:
-# Addition              +
-# Subtraction           -
-# Multiplication        *
-# Division              /
-# Floor Division        //
-# Exponent              **
-# Modulo               %
+"""
+Arithmetic Operators:
+Addition              +
+Subtraction           -
+Multiplication        *
+Division              /
+Floor Division       //
+Exponent             **
+Modulo                %
+"""
 
 # While I'm sure everybody reading the script is pretty familiar with first four operators; ' + - * / '
 # If users wish to drop the decimal on division operation, using floor division will suffice. ' // '

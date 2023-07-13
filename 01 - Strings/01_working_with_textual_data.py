@@ -11,12 +11,12 @@
 print("Hello friend!")
 print("Hello friend!")
 
-
-# Common bad syntax examples:
-# print('Hey there") ---> proper syntax: print('Hey there')
-# print('Lammy's world') ---> proper syntax: print("Lammy's world")
-# print("Khabib "the eagle" Nurmagomedov") ---> proper syntax: print('Khabib "the eagle" Nurmagomedov')
-
+"""
+Common bad syntax examples:
+print('Hey there") ---> proper syntax: print('Hey there')
+print('Lammy's world') ---> proper syntax: print("Lammy's world")
+print("Khabib "the eagle" Nurmagomedov") ---> proper syntax: print('Khabib "the eagle" Nurmagomedov')
+"""
 
 # Passing in the text data into a 'variable':
 # By convention our variables should always be lowercase, and seperated with an underscore('_').
@@ -44,8 +44,10 @@ print(len(message))
 
 # After obtaining the character count; we can access each with passing in the location of that specific character inside the square brackets('[]') after our string
 # This location is called an 'index' and always starts with zero('0').
-# First character ---> index 0
-# Last character ---> len(string) - 1
+"""
+First character ---> index 0
+Last character ---> len(string) - 1
+"""
 print(message[0])
 print(message[13])
 
