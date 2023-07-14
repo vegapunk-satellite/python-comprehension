@@ -2,8 +2,10 @@
 # Considering there are a lot of songs, renaming them one by one would be really tedious.
 # Let's think what we learned over this period to solve this common problem using Python:
 
+
 # First let's make sure that we are on that specific directory
 import os
+
 
 os.chdir("C:/Users/MSI/Desktop/Records/One Piece/OST")
 # print(os.getcwd())                                                  #To check the directory where we are operating

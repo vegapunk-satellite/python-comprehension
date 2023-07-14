@@ -1,6 +1,7 @@
 # Scope
 #'LEGB' stands for Local, Enclosing, Global, Built-in --the reason that abbreviation is in this order, is because this is the order that determines what a variable is assigned to--
 
+
 x = "global x"
 
 
@@ -25,6 +26,7 @@ test("local z")
 # -------------------------------------------------------------------------------------
 # built-in scope
 import builtins
+
 
 print(dir(builtins))  # ** view the variables that are within the built-in scope**
 
