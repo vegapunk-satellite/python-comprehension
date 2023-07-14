@@ -95,4 +95,4 @@ print(sys.path)
 # Because of appending the directory before importing remaining modules.
 # So making this change via Python Path Enviroment variable makes more sense...
 # Changing the enviroment variables may be different in various operating systems,
-# but there are tutorials for each and every one of them on internet.
+# but there are plenty of tutorials for each and every one of them on the internet.

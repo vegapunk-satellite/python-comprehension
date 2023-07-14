@@ -1,3 +1,17 @@
+# Built-in Functionalities:
+# Absolute Value:
+# Basicly removes the ' - ' sign for negative numbers.
+print(abs(-10))
+
+# Round Function:
+# By default, will round the float values into the nearest integer value.
+print(round(5.56))
+
+# Users can also pass in a second argument into the round function;
+# which tells the function how many digits to round to.
+print(round(3.53286575, 2))
+
+
 # Boolean values are one of the data types, these values will either return true or false.
 # We'll be taking a closer look at them on the 'conditionals' scipts up ahead.
 """
@@ -29,7 +43,7 @@ print(
 )  # Won't be working as expected. Will end up concatenating strings...
 # Solution would be:
 # Data type should be converted into an integer first.
-# To cast these values from strings to integers, users can simply wrap these values into the 'int()' function.
+# To change these values from strings to integers, users can simply wrap these values into the 'int()' function.
 num_3 = int(num_3)
 num_4 = int(num_4)
 print(num_3 + num_4)

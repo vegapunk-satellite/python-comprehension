@@ -12,7 +12,7 @@ os.chdir(
 print(os.getcwd())
 print(os.listdir())  # Prints out the files in current directory
 # -------------------------------------------------------------------------------------
-##creating folder/s
+# creating folder/s
 os.mkdir("hsdh-OP")  # creates a single folder on the current directory
 os.makedirs("hsdh-OP/hito")  # creates multiple folders on the current directory
 
@@ -24,18 +24,18 @@ os.removedirs("hsdh-OP/hito")  # deletes multiple folders on the current directo
 
 print(os.listdir())
 # -------------------------------------------------------------------------------------
-##renaming file/s
+# renaming file/s
 os.rename("importing_modules", "importing_modules.py")
 print(os.listdir())
 # -------------------------------------------------------------------------------------
-##Obtaining a file's information
+# Obtaining a file's information
 print(os.stat("importing_modules.py"))
 print(os.stat("importing_modules.py").st_size)  # Returns the size of that file
 print(
     os.stat("importing_modules.py").st_mtime
 )  # Returns the last modification time of that file
 
-##We can convert the returned timestamp into a more user friendly and readable format
+# We can convert the returned timestamp into a more user friendly and readable format
 import os
 from datetime import datetime
 
@@ -47,7 +47,7 @@ print(
     datetime.fromtimestamp(mod_time)
 )  # And use that variable as an argument for 'datetime.fromtimestamp' function
 # -------------------------------------------------------------------------------------
-##Traversing the directory tree
+# Traversing the directory tree
 import os
 
 for dirpath, dirnames, filenames in os.walk(
@@ -57,9 +57,9 @@ for dirpath, dirnames, filenames in os.walk(
     print("Directories:", dirnames)
     print("Files:", filenames)
 
-##***** 'os.walk' method can be extremely useful if forgot a file's location or in a web application; keeping track of the file information within a certain directory structure*****
+# ***** 'os.walk' method can be extremely useful if forgot a file's location or in a web application; keeping track of the file information within a certain directory structure*****
 # -------------------------------------------------------------------------------------
-##Users can access their home directory location via;
+# Users can access their home directory location via;
 import os
 
 print(os.getcwd())

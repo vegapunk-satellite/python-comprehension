@@ -5,7 +5,7 @@ def user_func():  # In cases functions have parameters, they all go inside the p
 
 
 # Running the created function:
-# Putting parenthesis is crucial for the execution of the function.
+# Putting in parenthesis is crucial for the execution of the function.
 print(
     user_func
 )  # Won't be running the user function. Instead returns the location of the function within the memory.

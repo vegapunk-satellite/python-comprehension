@@ -1,5 +1,5 @@
-##Scope
-##'LEGB' stands for Local, Enclosing, Global, Built-in --the reason that abbreviation is in this order, is because this is the order that determines what a variable is assigned to--
+# Scope
+#'LEGB' stands for Local, Enclosing, Global, Built-in --the reason that abbreviation is in this order, is because this is the order that determines what a variable is assigned to--
 
 x = "global x"
 
@@ -23,7 +23,7 @@ def test(z):
 test("local z")
 # print(z)                 #*'z' variable is only local to the test function*
 # -------------------------------------------------------------------------------------
-##built-in scope
+# built-in scope
 import builtins
 
 print(dir(builtins))  # ** view the variables that are within the built-in scope**
@@ -38,7 +38,7 @@ print(m)
 
 
 # -------------------------------------------------------------------------------------
-##Enclosing
+# Enclosing
 def outer():
     x = "outer x"
 
@@ -67,4 +67,4 @@ def outer():
 
 
 outer()
-## nonlocal statement is useful in order to change the state of closures and decorators, will most likely be used more than the global statement
+# nonlocal statement is useful in order to change the state of closures and decorators, will most likely be used more than the global statement

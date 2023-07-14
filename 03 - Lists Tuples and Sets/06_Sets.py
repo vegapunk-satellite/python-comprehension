@@ -23,7 +23,7 @@ print(comp_sci_courses.difference(art_courses))  # returns the uncommon CompSci 
 # Combining two sets:
 print(comp_sci_courses.union(art_courses))  # returns all available courses
 
-# Creating empty; lists, tuples, sets:
+# Creating empty; lists, tuples and sets:
 # Empty Lists
 empty_list = []
 empty_list_2 = list()

@@ -43,10 +43,10 @@ class TestEmployee(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 # -------------------------------------------------------------------------------------
-##If we had hundreds of tests in our code unlike our example above
-##We would need to put those names in time and time again and the process will be tedious
-##We need to keep our code DRY(don't repeat yourself)
-##Hence the usage of 'setUp' and 'tearDown' methods
+# If we had hundreds of tests in our code unlike our example above
+# We would need to put those names in time and time again and the process will be tedious
+# We need to keep our code DRY(don't repeat yourself)
+# Hence the usage of 'setUp' and 'tearDown' methods
 import unittest
 from employee import Employee
 
@@ -98,10 +98,10 @@ class TestEmployee(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 # -------------------------------------------------------------------------------------
-##Tests don't necessarily run in order, hence the reason to keep all of them isolated
-##Sometimes it's also useful to have some code that runs at the very beginning of the test file; and then have some cleanup code that runs after all the tests have been run.
-##So unlike the 'setUp' and 'tearDown' that run before and after every single test, it would be nice to have some code that ran once before anything and once after everything.
-##This can be achieved with two class methods called 'setUpClass' and 'tearDownClass'
+# Tests don't necessarily run in order, hence the reason to keep all of them isolated
+# Sometimes it's also useful to have some code that runs at the very beginning of the test file; and then have some cleanup code that runs after all the tests have been run.
+# So unlike the 'setUp' and 'tearDown' that run before and after every single test, it would be nice to have some code that ran once before anything and once after everything.
+# This can be achieved with two class methods called 'setUpClass' and 'tearDownClass'
 import unittest
 from employee import Employee
 
@@ -166,13 +166,13 @@ class TestEmployee(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 # -------------------------------------------------------------------------------------
-##Basic usage of mocking
-##If our function relies on some information that given by a website, and in cases where the website cannot be reached;
-##we can use mocking to get around this problem, we only want our test to fail if there is something wrong with our code
+# Basic usage of mocking
+# If our function relies on some information that given by a website, and in cases where the website cannot be reached;
+# we can use mocking to get around this problem, we only want our test to fail if there is something wrong with our code
 import unittest
 
-##we can use patch either as a decorator, or a context manager;
-##it will allow us to mock the object during a test, and than that object is automatically restored after the test is run
+# we can use patch either as a decorator, or a context manager;
+# it will allow us to mock the object during a test, and than that object is automatically restored after the test is run
 from unittest.mock import patch
 from employee import Employee
 
@@ -258,8 +258,8 @@ class TestEmployee(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-##Our tests shouldn't rely on, or affect other tests. We should be able to run any test independently
-##In the examples above; we were adding tests to an existing code,
-##'Test Driven Development' means writing tests before writing our code, and in some cases can be really useful
-##So basically the concept is; we should think about what we want our code to do, and than write a test implementing that behaviour
-##Than watch the test fail since it doesn't actually have any code to run against, and then to write the code in a way that gets the test to pass
+# Our tests shouldn't rely on, or affect other tests. We should be able to run any test independently
+# In the examples above; we were adding tests to an existing code,
+#'Test Driven Development' means writing tests before writing our code, and in some cases can be really useful
+# So basically the concept is; we should think about what we want our code to do, and than write a test implementing that behaviour
+# Than watch the test fail since it doesn't actually have any code to run against, and then to write the code in a way that gets the test to pass

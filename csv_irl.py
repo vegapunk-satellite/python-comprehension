@@ -8,13 +8,13 @@ below this statement. We need to write a script that parses out only the desired
 """Using the 'split' method on each line can be another approach, but if there is a typo within the given input
 such as ',' we wouldn't want to split on that... This approach may result in getting undesired output. """
 
-## First approach: using regular 'reader' method
+# First approach: using regular 'reader' method
 import csv
 
 html_output = ""
-##first we will create the variable that we desired to be our end goal and populate it as we go
+# first we will create the variable that we desired to be our end goal and populate it as we go
 names = []
-##we also know that we need to capture every name to put into our output, hence the empty list
+# we also know that we need to capture every name to put into our output, hence the empty list
 
 with open("patrons.csv", "r") as data_file:
     csv_data = csv.reader(data_file)
@@ -28,8 +28,8 @@ with open("patrons.csv", "r") as data_file:
 
     # for name in names:
     #     print(name)
-    ## We got all the names in the list, but we have to get rid of the opted out ones
-    ## We simply can add a condition that stops upon coming across the opted out members
+    # We got all the names in the list, but we have to get rid of the opted out ones
+    # We simply can add a condition that stops upon coming across the opted out members
 
     for line in csv_data:
         if line[0] == "No Reward":
@@ -52,7 +52,7 @@ plus we used '\n' for new line, '\t' for tab space to make our code look better"
 
 print(html_output)
 # -------------------------------------------------------------------------------------
-## Second approach: using 'DictReader' method (more readable code)
+# Second approach: using 'DictReader' method (more readable code)
 import csv
 
 html_output = ""

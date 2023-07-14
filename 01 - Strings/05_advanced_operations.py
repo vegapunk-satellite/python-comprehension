@@ -45,4 +45,4 @@ sentence_cs = "1 MB is equal to {:,} bytes".format(
     1000**2
 )  #':,' for comma seperating output
 print(sentence_cs)
-# We can even chain these formatting functionalities and use them together.
+# Users can even chain these formatting functionalities and use them together.

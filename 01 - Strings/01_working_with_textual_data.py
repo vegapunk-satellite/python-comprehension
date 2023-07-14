@@ -6,7 +6,7 @@
 #'print' is a built in python function, which allows users to prompt their desired message to the terminal within the usage of proper syntax ofcourse.
 # The message can be a string, or any other object.
 # If it's an object, then it will be converted into a string before written to the screen.
-# We are passing in a text value into the print function in this case specificly 'Hello friend!'.
+# We are passing in a text value into the print function in this case specificly; 'Hello friend!'.
 # As seen in the examples below; using apostrophes or quotation marks are optional. But either way users should be consistent.
 print("Hello friend!")
 print("Hello friend!")

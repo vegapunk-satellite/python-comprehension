@@ -8,6 +8,7 @@ if True:
 # For example; let us execute a print statement only if the language is 'Python'.
 """
 Comparison Signs:
+
 Equal:            ==
 Not Equal:        !=
 Greater Than:     >

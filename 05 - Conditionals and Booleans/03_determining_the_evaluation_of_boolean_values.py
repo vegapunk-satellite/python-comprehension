@@ -1,11 +1,12 @@
 # Spotting the values that evaluate to False tends to be convenient:
 """
 Various values which evaluate to 'False':
+
 False
 None
 0(Zero) of any numeric type
-Any empty sequence. For example, '', (), [].
-Any empty mapping. For example, {}.
+Any empty sequence. For example; '' () []
+Any empty mapping. For example; {}
 """
 
 condition = 0

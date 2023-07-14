@@ -22,5 +22,5 @@ print(dir(greeting))
 # To see in-depth information about these methods:
 # Users can pass in 'str' within 'help()' method. Reading documentation will help big time.
 print(help(str))
-# We can pass in specific methods inside 'help', in cases we are not sure about the functionality.
+# Users can pass in specific methods inside 'help', in cases where they are not sure about the functionality.
 print(help(str.lower))

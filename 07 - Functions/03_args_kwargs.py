@@ -30,8 +30,10 @@ student_info(*courses, **info)  # Proper unpacking.
 
 # Let's manually create two functions; one calculating if a year is a leap year or not;
 # and the other calculates how many days are there in a specific month.
+
+# Number of days per month.
+# First value is a placeholder with no useage, inserted only for indexing purposes.
 month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-# Number of days per month. First value is a placeholder with no useage, inserted only for indexing purposes.
 
 
 def is_leap(year):

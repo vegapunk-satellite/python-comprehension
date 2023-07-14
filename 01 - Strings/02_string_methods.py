@@ -35,7 +35,7 @@ proper_way_to_address = "dear customer"
 # automated_store_message = hail + ' ' + proper_way_to_address + '! Would you like to have Senbei or Okaki?'
 # print(automated_store_message)
 
-# Formating tends to be more practical in these situations:
+# Formating tends to be more practical in these kind of situations:
 automated_store_message = "{} {}! Would you like to have Senbei or Okaki?".format(
     hail, proper_way_to_address
 )

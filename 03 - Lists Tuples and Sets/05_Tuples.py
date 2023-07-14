@@ -31,4 +31,4 @@ print(tuple_2)
 # print(tuple_1)
 # print(tuple_2)
 
-# Users can loop through tuples, access values within them. Basicly anything except what mutates.
+# Users can loop through tuples, access values within them; basicly anything except what mutates.

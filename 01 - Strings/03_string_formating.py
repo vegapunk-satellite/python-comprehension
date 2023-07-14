@@ -20,7 +20,7 @@ text = "This is a headline"
 sentence_2 = "<{0}> {1} <{0}>".format(tag, text)
 print(sentence_2)
 
-# On previous examples we passed in a dictionary into 'format' function;
+# On the previous examples we passed in a dictionary into 'format' function;
 # we were accessing the necessary of that dictionary within 'format'.
 # Alternative way to access these fields from directly within placeholders:
 

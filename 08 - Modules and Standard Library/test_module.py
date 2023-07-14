@@ -1,4 +1,5 @@
-# This module was created for sake of being imported.
+""" This module was created for the sake of being imported. """
+
 print("Imported test_module...")
 
 test_string = "Greetings friend!"

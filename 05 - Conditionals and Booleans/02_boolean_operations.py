@@ -4,7 +4,7 @@ user = "Admin"
 logged_in = True
 
 # Having two seperate conditions for the specific cause:
-# Usage of 'and' keyword:
+# Usage of the 'and' keyword:
 if user == "Admin" and logged_in:
     print(
         "Admin Page"
@@ -16,7 +16,7 @@ else:
 
 
 # In cases where users only cares about one of the conditionals is necessary:
-# Usage of 'or' keyword:
+# Usage of the 'or' keyword:
 user = "Admin"
 logged_in = False
 
@@ -27,7 +27,7 @@ else:
 
 # In cases where switching boolean values is convenient;
 # meaning changing 'True' to a 'False' or visa versa...
-# Usage of 'not' keyword:
+# Usage of the 'not' keyword:
 user = "Admin"
 logged_in = False
 

@@ -32,7 +32,7 @@ print(my_list[-1:2:-2])
 print(my_list[::-1])
 
 # Slicing strings:
-# Users can apply the same logic for strings as well:
+# Users can apply the same logic for strings as well.
 sample_url = "https://inventwithpython.com"
 
 # Reversing the url:

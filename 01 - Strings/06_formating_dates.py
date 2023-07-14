@@ -16,5 +16,5 @@ sentence = (
 )
 print(sentence)
 
-# All functional formating values are accessable to users within datetime documentation.
+# All functional formating values are accessable to users within the datetime documentation.
 # Reading documentation will benefit the users greatly.

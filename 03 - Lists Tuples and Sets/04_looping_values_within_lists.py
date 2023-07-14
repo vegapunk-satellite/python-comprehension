@@ -18,12 +18,12 @@ for index, course in enumerate(
     print(index, course)
 
 
-# Refactoring a list into some string:
+# Refactoring a list into a string:
 # 'seperator'.join(list)
 # list ---> comma seperated value:
 course_str = ", ".join(courses)
 print(course_str)
 
-# Converting some string into a list:
+# Converting a string into a list:
 new_list = course_str.split(", ")
 print(new_list)

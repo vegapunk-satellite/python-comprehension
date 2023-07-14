@@ -12,5 +12,7 @@ while x < 10:
     print(x)
     x += 1
 
-"""In cases where users accidentally stuck on an infinite loop;
-' crtl + c ' shortcut will help breaking out of it on most of the operating systems."""
+"""
+In cases where users accidentally stuck on an infinite loop;
+' crtl + c ' shortcut will help breaking out of it on most of the operating systems.
+"""

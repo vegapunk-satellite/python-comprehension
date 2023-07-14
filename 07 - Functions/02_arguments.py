@@ -1,5 +1,5 @@
 # Passing arguments into a function is simply creating parameters within the parenthesis.
-# Customizing the greeting.
+# Customizing the greeting:
 def greeting_msg(greeting):
     return "{} friend!".format(greeting)
 

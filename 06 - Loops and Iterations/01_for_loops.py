@@ -19,7 +19,7 @@ for num in nums:
     print(nums)  # Will prompt out the each element of the list; up until the condional.
 
 
-# Ignoring a value, while still iterating:
+# Ignoring a value, while iterating through:
 # Continue statement will skip to the next iteration of the list.
 for num in nums:
     if num == 4:

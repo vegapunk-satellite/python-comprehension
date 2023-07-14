@@ -1,6 +1,6 @@
 # Dictionaries allow users to work with key & value pairs.
 # Users may have heard this concept from other languages; under names of 'hash maps' or 'associative arrays'.
-# Key & value pairs are two linked values; where the 'key' is a unique indentifier, that lets us find the data. And the 'value' is that data.
+# Key & value pairs are two linked values; where 'key' is a unique indentifier, that lets us find the data. And 'value' is that data.
 
 # Let us try defining a student variable using a dictionary:
 student = {

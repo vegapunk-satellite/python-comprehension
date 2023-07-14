@@ -5,13 +5,13 @@
 # Let's create one called 'courses'; a list variable that contains our specific courses.
 courses = ["History", "Math", "Physics", "CompSci"]
 
-print(courses)  # returns the actual list
-print(len(courses))  # returns the lenght of the list
+print(courses)  # returns the actual list.
+print(len(courses))  # returns the lenght of the list.
 
 # When in need of a specific element of the list:
 # Users can pass in the location of the desired index within square brackets ' [] ' to obtain the data.
-print(courses[0])  # returns the first element
-print(courses[3])  # returns the last element; ' len(list) - 1 '
+print(courses[0])  # returns the first element.
+print(courses[3])  # returns the last element; ' len(list) - 1 '.
 
 # Negative indexes allow users to manipulate data more conveniently towards the end of that list.
 print(
@@ -19,7 +19,7 @@ print(
 )  # returns the last element, hence users won't be concerning over the lenght of the list.
 
 # If users accidentally try to access an index that does not exist; python will prompt out an index error.
-# print(courses[5])   # ' IndexError: list index out of range '
+# print(courses[5])   # Retuns IndexError: list index out of range.
 
 # Instead of grabbing a value; users can access a 'range' of values.
 # list[starting point:stopping point]
@@ -27,4 +27,4 @@ print(
 # however after the colon(:), second index(stopping point) is always not inclusive.
 print(courses[0:2])
 print(courses[:2])  # when left out empty; by default starts from the first index: '0'
-print(courses[2:])  # when left out empty; by default goes up until the end of list
+print(courses[2:])  # when left out empty; by default goes up until the end of list.

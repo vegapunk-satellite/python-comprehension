@@ -84,7 +84,7 @@ print(
 # If the user tries to find a value that does not exist in the list:
 # python will prompt out a value error
 
-# Checking whether a value exists or not, inside a given list:
+# Checking whether a value exists or not, inside the given list:
 # Will return a boolean, either True or False.
 print("Gymnastics" in courses)  # Returns False, since the condition is false.
 print("Math" in courses)  # Returns True, since the condition is true.
