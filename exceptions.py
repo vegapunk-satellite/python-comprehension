@@ -19,7 +19,7 @@ except FileNotFoundError:
     print("Sorry. This file does not exist.")
 # -------------------------------------------------------------------------------------
 # Handling multiple exceptions
-# Exception priority is always with first except block we wrote in our code. So more specific ones should be listed above
+# Exception priority is always with the first except block we wrote in our code. So more specific ones should be listed above
 try:
     f = open("test.txt")
     var = bad_var

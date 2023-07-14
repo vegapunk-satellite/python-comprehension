@@ -3,13 +3,14 @@
 # Strings('str') are one of those data types, pretty useful in cases where we need to work with textual data.
 
 
-#'print' is a built in python function, which allows users to prompt their desired message to the terminal within the usage of proper syntax ofcourse.
+#'print' is a built-in python function, which allows users to prompt their desired message to the terminal within the usage of proper syntax of course.
 # The message can be a string, or any other object.
-# If it's an object, then it will be converted into a string before written to the screen.
-# We are passing in a text value into the print function in this case specificly; 'Hello friend!'.
+# If it's an object, then it will be converted into a string before being written to the screen.
+# We are passing in a text value into the print function in this case specifically; 'Hello friend!'.
 # As seen in the examples below; using apostrophes or quotation marks are optional. But either way users should be consistent.
 print("Hello friend!")
 print("Hello friend!")
+
 
 """
 Common bad syntax examples:
@@ -18,11 +19,12 @@ print('Lammy's world') ---> proper syntax: print("Lammy's world")
 print("Khabib "the eagle" Nurmagomedov") ---> proper syntax: print('Khabib "the eagle" Nurmagomedov')
 """
 
+
 # Passing in the text data into a 'variable':
-# By convention our variables should always be lowercase, and seperated with an underscore('_').
+# By convention our variables should always be lowercase, and separated with an underscore('_').
 # Variable names should be as descriptive as possible in parallel with the value they hold.
 my_message = "Hello friend!"
-# after creating a variable, users are able to pass that variable inside the 'print' function, without the quotation marks.
+# After creating a variable, users are able to pass that variable inside the 'print' function, without the quotation marks.
 print(my_message)
 
 
@@ -37,7 +39,7 @@ print(multi_line_message)
 
 
 # We can think of our text as a string of individual characters, and we can access these individual characters also.
-# But first let's see how many charachters do we have in our string, to achive this we can use the 'len' function, which stands for length.
+# But first let's see how many characters do we have in our string, to achieve this we can use the 'len' function, which stands for length.
 message = "What's up doc?"
 print(len(message))
 

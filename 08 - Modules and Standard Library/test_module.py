@@ -1,6 +1,8 @@
 """ This module was created for the sake of being imported. """
 
+
 print("Imported test_module...")
+
 
 test_string = "Greetings friend!"
 
@@ -13,4 +15,6 @@ def find_index(
         if value == target:
             return i
 
-    return -1  # In cases where user function does not find index value; returns '-1'.
+    return (
+        -1
+    )  # In cases where the user function does not find index value; returns '-1'.

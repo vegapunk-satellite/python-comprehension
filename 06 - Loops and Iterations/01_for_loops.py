@@ -1,6 +1,7 @@
-# Python allows users have the ability to loop through various types of data.
+# Python allows users to loop through various types of data.
 # Looping through a whole list of numbers:
 nums = [1, 2, 3, 4, 5]
+
 
 for num in nums:
     print(
@@ -12,11 +13,12 @@ for num in nums:
 # breaking out of a loop:
 nums = [1, 2, 3, 4, 5]
 
+
 for num in nums:
     if num == 5:
         print("Number found!")
         break  # Will break out from the loop and stop iterating; at the moment '5' is found.
-    print(nums)  # Will prompt out the each element of the list; up until the condional.
+    print(nums)  # Will prompt each element of the list; up until the conditional.
 
 
 # Ignoring a value, while iterating through:
@@ -44,5 +46,5 @@ for num in nums:
 # range(starting_number, up_to_but_not_included_number)
 for i in range(
     1, 11
-):  # In cases where starting number is not passed in, by default stars from '0'.
+):  # In cases where the starting number is not passed in, by default starts from '0'.
     print(i)

@@ -5,6 +5,7 @@
 # Reading a CSV file:
 import csv
 
+
 with open("names.csv", "r") as csv_file:
     csv_reader = csv.reader(
         csv_file
@@ -26,6 +27,7 @@ with open("names.csv", "r") as csv_file:
 # finally we iterate through the each line in the original csv data; and writing it out to the new file with '-'
 import csv
 
+
 with open("names.csv", "r") as csv_file:
     csv_reader = csv.reader(csv_file)
 
@@ -37,6 +39,7 @@ with open("names.csv", "r") as csv_file:
 # -------------------------------------------------------------------------------------
 # Let's try to read the new csv file that we created,
 import csv
+
 
 with open("new_names.csv", "r") as csv_file:
     # csv_reader = csv.reader(csv_file)                   #if we do not pass in our delimiter we won't have the correct parsing
@@ -50,6 +53,7 @@ with open("new_names.csv", "r") as csv_file:
 # while using 'DictReader' method; our fields in the first line will be the key/s and the rest of the information on the later lines will be their value/s pairs
 import csv
 
+
 with open("names.csv", "r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
 
@@ -60,6 +64,7 @@ with open("names.csv", "r") as csv_file:
 # Dictionary Writer
 # Users have to provide the field names of their file
 import csv
+
 
 with open("names.csv", "r") as csv_file:
     csv_reader = csv.DictReader(csv_file)
@@ -79,6 +84,7 @@ with open("names.csv", "r") as csv_file:
 # This will really resemble the code above; first we need to remove the 'email' from our 'fieldnames' variable
 # after that; when we are iterating through, before printing out we need to remove 'email' via 'del line['email']'
 import csv
+
 
 with open("names.csv", "r") as csv_file:
     csv_reader = csv.DictReader(csv_file)

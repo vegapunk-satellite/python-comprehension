@@ -5,16 +5,20 @@ The tricky part is some of these members desired to contribute but opted out fro
 Inside this csv_file there is a line that says 'No reward description: (None for no reward)' opted out members are listed
 below this statement. We need to write a script that parses out only the desired parts from the original csv_file"""
 
+
 """Using the 'split' method on each line can be another approach, but if there is a typo within the given input
 such as ',' we wouldn't want to split on that... This approach may result in getting undesired output. """
 
+
 # First approach: using regular 'reader' method
 import csv
+
 
 html_output = ""
 # first we will create the variable that we desired to be our end goal and populate it as we go
 names = []
 # we also know that we need to capture every name to put into our output, hence the empty list
+
 
 with open("patrons.csv", "r") as data_file:
     csv_data = csv.reader(data_file)
@@ -36,27 +40,34 @@ with open("patrons.csv", "r") as data_file:
             break
         names.append(f"{line[0]} {line[1]}")
 
+
 html_output += (
     f"<p>There are currently {len(names)} public contributors. Thank you!</p>"
 )
 
+
 html_output += "\n<ul>"
+
 
 for name in names:
     html_output += f"\n\t<li>{name}</li>"
+
 
 html_output += "\n</ul>"
 """html tags that we added in:
 <p> - paragraph, <ul> - unordered list, <li> - list item
 plus we used '\n' for new line, '\t' for tab space to make our code look better"""
 
+
 print(html_output)
 # -------------------------------------------------------------------------------------
 # Second approach: using 'DictReader' method (more readable code)
 import csv
 
+
 html_output = ""
 names = []
+
 
 with open("patrons.csv", "r") as data_file:
     csv_data = csv.DictReader(data_file)
@@ -71,18 +82,23 @@ with open("patrons.csv", "r") as data_file:
             break
         names.append(f"{line['FirstName']} {line['LastName']}")
 
+
 html_output += (
     f"<p>There are currently {len(names)} public contributors. Thank you!</p>"
 )
 
+
 html_output += "\n<ul>"
+
 
 for name in names:
     html_output += f"\n\t<li>{name}</li>"
+
 
 html_output += "\n</ul>"
 """html tags that we added in:
 <p> - paragraph, <ul> - unordered list, <li> - list item
 plus we used '\n' for new line, '\t' for tab space to make our code look better"""
+
 
 print(html_output)

@@ -1,5 +1,5 @@
-# '*args' and '**kwargs' allow users to accept an arbitrary number of positional or keyword arguments.
-# Assume user function takes positional arguments that represent the 'classes which the student is taking'.
+# '*args' and '**kwargs allow users to accept an arbitrary number of positional or keyword arguments.
+# Assume the user function takes positional arguments that represent the 'classes which the student is taking'.
 # Plus the keyword arguments that passed in will be 'random information about the students'.
 # For both of these examples; users don't know how many positional or keyword arguments there will be.
 # Hence the usage of *args **kwargs; they are by convention named as such.
@@ -24,15 +24,17 @@ def student_info(*args, **kwargs):
 courses = ["Math", "Art"]
 info = {"name": "John", "age": 22}
 
+
 student_info(courses, info)  # function won't unpack the values individually as desired.
 student_info(*courses, **info)  # Proper unpacking.
 
 
 # Let's manually create two functions; one calculating if a year is a leap year or not;
-# and the other calculates how many days are there in a specific month.
+# and the other calculates how many days there are in a specific month.
+
 
 # Number of days per month.
-# First value is a placeholder with no useage, inserted only for indexing purposes.
+# First value is a placeholder with no usage, inserted only for indexing purposes.
 month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 

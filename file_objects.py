@@ -3,8 +3,10 @@
 # Working without the context manager:
 f = open("test.txt", "r")
 
+
 print(f.name)
 print(f.mode)
+
 
 f.close()
 # -------------------------------------------------------------------------------------
@@ -14,6 +16,7 @@ f.close()
 # Test if a file closes after it has been used, or not:
 with open("test.txt", "r") as f:
     pass
+
 
 print(f.closed)  # returns True; so passed our test
 print(

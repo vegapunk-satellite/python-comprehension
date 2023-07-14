@@ -2,6 +2,7 @@
 # Tabs to spaces should always be set to True, helps big time when the code gets long and complex
 nums = [11, 30, 44, 54]
 
+
 for num in nums:
     square = num**2  # 1 tab
     print(square)  # 4 spaces
@@ -9,6 +10,7 @@ for num in nums:
 # Naming our modules same with the libraries that we try to import
 # Assume user named this module 'math.py'
 from math import radians, sin
+
 
 rads = radians(90)
 print(sin(rads))
@@ -19,6 +21,7 @@ print(sin(rads))
 # Bad variable names
 from math import radians, sin
 
+
 radians = radians(90)
 # print(sin(radians))
 # seems like it's working but actually it is not
@@ -26,7 +29,7 @@ rad45 = radians(45)
 print(rad45)
 
 
-# Returns a TypeError. Anytime we referance radians after the variable assignment, it will use the variable and not the function
+# Returns a TypeError. Anytime we reference radians after the variable assignment, it will use the variable and not the function
 # -------------------------------------------------------------------------------------
 ##Mutable Default Arguments
 def add_employee(emp, emp_list=[]):
@@ -90,15 +93,19 @@ display_time()
 # -------------------------------------------------------------------------------------
 # How iterators get exhausted:
 
+
 names = ["Peter Parker", "Clark Kent", "Wade Wilson", "Bruce Wayne"]
 heroes = ["Spiderman", "Superman", "Deadpool", "Batman"]
+
 
 # identities = zip(names, heroes)
 # print(identities)
 
+
 # Instead of an entire list of zipped items, returns zip object's location on the memory
 # Tends to be more efficient for the CPU when imagining a list that has thousands of items
 # print(list(identities))
+
 
 # Solved one problem printed the list but now our loop below disappeared
 # Reason was quite simple, we are converting our zip object into a list;
@@ -108,11 +115,13 @@ heroes = ["Spiderman", "Superman", "Deadpool", "Batman"]
 identities = list(zip(names, heroes))
 print(identities)
 
+
 for identity in identities:
     print("{} is actually {}!".format(identity[0], identity[1]))
 # -------------------------------------------------------------------------------------
 # Bad practices while importing modules
 import os
+
 
 os.rename(file)
 # -------------------------------------------------------------------------------------
@@ -120,12 +129,14 @@ os.rename(file)
 # for the sake of shortening our code
 from os import rename, remove
 
+
 rename(filename)
 remove(filename)
 # -------------------------------------------------------------------------------------
 # in cases where many functions will be used an alternative would be the '*' sign;
 # which imports all functions that specific module has
 from os import *
+
 
 rename(filename)
 remove(filename)
@@ -136,6 +147,7 @@ remove(filename)
 # or multiple different libraries might have the same function name; hence the confusion
 from html import *
 from glob import *
+
 
 # both of these libraries have an 'escape' method
 # but each of these methods have a complete different functionality

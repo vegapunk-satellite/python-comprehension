@@ -171,6 +171,7 @@ if __name__ == "__main__":
 # we can use mocking to get around this problem, we only want our test to fail if there is something wrong with our code
 import unittest
 
+
 # we can use patch either as a decorator, or a context manager;
 # it will allow us to mock the object during a test, and than that object is automatically restored after the test is run
 from unittest.mock import patch
@@ -257,6 +258,7 @@ class TestEmployee(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
 
 # Our tests shouldn't rely on, or affect other tests. We should be able to run any test independently
 # In the examples above; we were adding tests to an existing code,

@@ -1,13 +1,14 @@
 # Passing arguments into a function is simply creating parameters within the parenthesis.
-# Customizing the greeting:
+# Customising the greeting:
 def greeting_msg(greeting):
     return "{} friend!".format(greeting)
 
 
-# Whenever the parameters within the parenthesis are required arguments, like in current case.
+# Whenever the parameters within the parenthesis are required arguments, like in the current case.
 # Upon the execution; users have to pass in the argument which they created.
-# In cases where it's accidentaly forgotten, users will be prompted out with a TypeError.
+# In cases where it's accidentally forgotten, users will be prompted out with a TypeError.
 # print(greeting_msg())
+
 
 # Let's pass in our preferential phrase into the function, for the 'greeting' argument.
 # Which will set it equal to the string users chose.
@@ -22,8 +23,9 @@ def specific_greeting(greeting, name="friend"):
 
 print(
     specific_greeting("Howdy")
-)  # Successfuly executes even without second argument due to the given default value.
+)  # Successfully executes even without a second argument due to the given default value.
 print(specific_greeting(greeting="Come on in and make yourself at home"))
+
 
 # Required positional arguments have to come before keyword arguments.
 # print(specific_greeting(name="Makino-san", "Hey there"))  # Returns a SyntaxError.

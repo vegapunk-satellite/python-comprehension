@@ -1,13 +1,16 @@
 import os
 
+
 print(
     dir(os)
 )  # Prints out all of the attributes and methods we can access to within this module
 print(os.getcwd())  # Prints out the directory of current script
 
+
 os.chdir(
     "C:/Users/MSI/Desktop/Vega Records/my_modules"
 )  # Changes the current directory to the desired address via the argument
+
 
 print(os.getcwd())
 print(os.listdir())  # Prints out the files in current directory
@@ -16,11 +19,13 @@ print(os.listdir())  # Prints out the files in current directory
 os.mkdir("hsdh-OP")  # creates a single folder on the current directory
 os.makedirs("hsdh-OP/hito")  # creates multiple folders on the current directory
 
+
 print(os.listdir())
 # -------------------------------------------------------------------------------------
 # deleting folder/s
 os.rmdir("hsdh-OP")  # deletes a single folder on the current directory
 os.removedirs("hsdh-OP/hito")  # deletes multiple folders on the current directory
+
 
 print(os.listdir())
 # -------------------------------------------------------------------------------------
@@ -35,9 +40,11 @@ print(
     os.stat("importing_modules.py").st_mtime
 )  # Returns the last modification time of that file
 
+
 # We can convert the returned timestamp into a more user friendly and readable format
 import os
 from datetime import datetime
+
 
 print(os.getcwd())
 mod_time = os.stat(
@@ -50,6 +57,7 @@ print(
 # Traversing the directory tree
 import os
 
+
 for dirpath, dirnames, filenames in os.walk(
     os.getcwd()
 ):  # If the desired directory is not the current one we can pass a specific directory as a string to our argument
@@ -57,16 +65,20 @@ for dirpath, dirnames, filenames in os.walk(
     print("Directories:", dirnames)
     print("Files:", filenames)
 
+
 # ***** 'os.walk' method can be extremely useful if forgot a file's location or in a web application; keeping track of the file information within a certain directory structure*****
 # -------------------------------------------------------------------------------------
 # Users can access their home directory location via;
 import os
 
+
 print(os.getcwd())
 print(os.environ.get("HOMEPATH"))
 
+
 file_path = os.path.join(os.environ.get("HOMEPATH"), "test.txt")
 print(file_path)
+
 
 print(os.path.basename("/tmp/test.txt"))  # base name
 print(os.path.dirname("/tmp/test.txt"))  # directory name
@@ -79,5 +91,6 @@ print(
     os.path.isfile("/Users/MSI")
 )  # Returns true if specific path is a file, false if not
 print(os.path.splitext("/tmp/test.txt"))  # Splits root of the path and the extension.
+
 
 print(dir(os.path))  # We can see all the useful functions this method has
