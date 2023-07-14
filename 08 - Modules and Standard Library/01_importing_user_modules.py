@@ -9,12 +9,12 @@ import test_module
 
 
 courses = ["History", "Math", "Physics", "CompSci"]
-
 # Using a specific functionality within our module:
 # Users have to type in the module name first; and after the desired functionality.
 index = test_module.find_index(
     courses, "Math"
 )  # Looking into the list of 'courses', to find the value of 'Math'.
+
 print(index)
 
 
@@ -27,8 +27,8 @@ import test_module as TM
 
 
 courses = ["History", "Math", "Physics", "CompSci"]
-
 index = TM.find_index(courses, "Math")
+
 print(index)
 
 
@@ -44,6 +44,7 @@ from test_module import (
 
 courses = ["History", "Math", "Physics", "CompSci"]
 index = find_index(courses, "Math")
+
 print(index)
 print(test_string)
 
@@ -54,6 +55,8 @@ print(test_string)
 """ from module_name import * """
 
 
+# Whenever the users import a module, system checks multiple locations of a list called; 'sys.path'.
+# Users can access the this list by importing 'sys' module.
 # If the desired module is in the same directory with our current file. We can simply import it.
 from test_module import find_index, test_string
 import sys
@@ -61,13 +64,35 @@ import sys
 courses = ["History", "Math", "Physics", "CompSci"]
 
 index = find_index(courses, "Math")
-# print(index)
-# print(test_string)
 
-print(sys.path)  # Allows users to see the directories
+print(
+    sys.path
+)  # Returns the list of directories within system where Python looks for modules.
+# Order of sys directories;
+"""
+-- The directory of the running script
+-- Directories listed in the Python path enviroment variable
+-- Standard Library Directories
+-- Site Packages Directory for third party packages
+"""
 
 
-# If not in same directory, we can append the location of the desired module to our python path
+# In cases the module that users trying to import is in a different directory.
+# Users can manually add that directory, to the 'sys.path' list.
 import sys
 
-sys.path.append("-------Directory_Address-------")
+
+sys.path.append("Directory/of/the/imported/module")
+from test_module import find_index, test_string
+
+
+courses = ["History", "Math", "Physics", "CompSci"]
+index = find_index(courses, "Math")
+
+print(sys.path)
+
+# Manually adding directories is not the best approach.
+# Because of appending the directory before importing remaining modules.
+# So making this change via Python Path Enviroment variable makes more sense...
+# Changing the enviroment variables may be different in various operating systems,
+# but there are tutorials for each and every one of them on internet.
