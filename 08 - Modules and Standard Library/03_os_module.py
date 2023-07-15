@@ -4,7 +4,7 @@ import os
 
 print(
     dir(os)
-)  # Prints out all of the attributes and methods we can access to within this module.
+)  # Prints out all of the attributes and methods users can access to within this module.
 
 
 # Commonly used OS Module Functionalities:
@@ -123,4 +123,4 @@ print(
 
 print(
     dir(os.path)
-)  # Users can see all the useful functions and attributes this method has within.
+)  # Returns all of the attributes and methods users can access to within this module.
