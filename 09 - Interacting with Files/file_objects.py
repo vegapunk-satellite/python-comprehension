@@ -23,22 +23,25 @@ with open("test.txt", "r") as f:
 
 
 print(f.closed)  # returns True; so passed our test.
-print(
-    f.read()
-)  # Will throw a 'ValueError', users can only work with this file within the context manager.
+# print(
+#     f.read()
+# )  # Will throw a 'ValueError', users can only work with this file within the context manager.
 
 
 # Working with a context manager(recommended):
 # Reading files:
 with open("test.txt", "r") as f:
     f_contents = f.read()  # Returns the file read only.
-    # print(f_contents)
+    print(f_contents)
+
     f_contents = f.readlines()  # Returns all contents of the file within a list.
-    # print(f_contents)
+    print(f_contents)
+
     f_contents = (
         f.readline()
     )  # Returns the first line of the file, and so on if called multiple times.
-    # print(f_contents)
+    print(f_contents)
+
     # But rather than calling this function again and again users can simply iterate through it.
     for line in f:
         print(line, end="")  # Passing in an empty string each time the function prints.
