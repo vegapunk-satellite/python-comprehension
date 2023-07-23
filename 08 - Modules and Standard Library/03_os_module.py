@@ -12,7 +12,7 @@ print(
 print(os.getcwd())  # Prints out the directory of the current script.
 
 
-# Navigating into a lew location on the filesystem:
+# Navigating into a new location on the filesystem:
 os.chdir(
     "C:/Users/MSI/Desktop/Vega Records/my_modules"
 )  # Changes the current directory to the desired new location.
@@ -31,8 +31,8 @@ print(os.listdir())
 
 
 # Deleting folders and directories:
-os.rmdir("hsdh-OP")  # deletes a single folder on the current directory
-os.removedirs("hsdh-OP/hito")  # deletes multiple folders on the current directory
+os.rmdir("hsdh-OP")  # deletes a single folder on the current directory.
+os.removedirs("hsdh-OP/hito")  # deletes multiple folders on the current directory.
 
 
 print(os.listdir())
@@ -66,7 +66,7 @@ mod_time = os.stat(
 ).st_mtime  # Setting the returned 'timestamp' value as a variable.
 print(
     datetime.fromtimestamp(mod_time)
-)  # And passing in that variable as an argument for '.fromtimestamp()'. Prompts the readable date.
+)  # And passing in that variable as an argument for '.fromtimestamp()'. Prompts out the readable date.
 
 
 # Traversing the entire directory tree and files within it:
@@ -96,15 +96,15 @@ print(os.environ.get("HOMEPATH"))  # Prompts out only the home directory.
 
 # Combining a file with the desired path:
 # Could be done using concatenation but leaves room for user mistakes, so instead;
-# 'os.path.join()' method tends to be a lot more convenient
+# 'os.path.join()' method tends to be a lot more convenient...
 file_path = os.path.join(os.environ.get("HOMEPATH"), "test.txt")
 print(file_path)
 
 
-# Various convenient methods available through using 'os.path':
+# Various useful methods available through using 'os.path':
 print(
     os.path.basename("/tmp/test.txt")
-)  # Returns the file name, and does not have to be a real path.
+)  # Returns the file name, and that does not have to be an existent path.
 print(os.path.dirname("/tmp/test.txt"))  # Returns the directory name.
 print(os.path.split("/tmp/test.txt"))  # Returns both file and directory names.
 print(
