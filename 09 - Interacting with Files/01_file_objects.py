@@ -1,7 +1,14 @@
 # File Objects
 # Working without the context manager(not recommended):
 # Using built-in 'open' command to open and read the 'test.txt' file;
-# that is located in the same directory with our current script.
+# which is located in a sub-directory, hence the usage of the 'os' library.
+import os
+
+
+os.chdir(
+    "C:/Users/MSI/Desktop/Records/CS/my_modules/09 - Interacting with Files/sample texts"
+)
+
 f = open("test.txt", "r")  # reading.
 # f = open("test.txt", "w") # writing.
 # f = open("test.txt", "a") # appending.
@@ -112,6 +119,13 @@ with open("test.txt", "r") as rf:
 
 # Copying a jpg file:
 # Previous logic will throw an UnicodeDecodeError, so users need to open binary mode by simply adding 'b' right next to both 'r' & 'w'.
+import os
+
+
+os.chdir(
+    "C:/Users/MSI/Desktop/Records/CS/my_modules/09 - Interacting with Files/sample images"
+)  # changing the operations directory where the sample jpg files exist.
+
 with open(
     "shanks.jpg", "rb"
 ) as rf:  # 'rb' = Binary Mode(Reading bytes instead of text).

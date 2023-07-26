@@ -9,7 +9,9 @@ import os
 
 
 # Change the directory to the folder that holds the album.
-os.chdir("C:/Users/MSI/Desktop/Records/OST")
+os.chdir(
+    "C:/Users/MSI/Desktop/Records/CS/my_modules/09 - Interacting with Files/sample OST"
+)
 print(os.getcwd())  # To check the directory where we are operating, just to be sure...
 
 
@@ -26,25 +28,27 @@ for f in os.listdir():
 
     # Accessing the separated name and file extension values by;
     # setting that tuple into two separate variables.
-    f_name, f_ext = os.path.splitext(f)
-    print(f_name)
+    f_title, f_ext = os.path.splitext(f)
+    print(f_title)
 
     # Second stage:
     # Altering the file names in a properly sortable fashion:
     # Grabbing the serialisation numbers in each name; inserting them prior to their titles.
     # since the texts in the example file are separated with '-':
-    f_title, f_num = f_name.split("-")
-    print(f_title)
+    f_album, f_song_name, f_num = f_title.split("-")
+    print(f_album)
+    print(f_song_name)
     print(f_num)
 
     # Third stage:
     # Formatting the text as desired, in a proper sortable way;
-    # 'number'-'title'.'extension'
-    print("{}-{}{}".format(f_num, f_title, f_ext))
+    # 'serialisation number'-'song name'-'album'.'extension'
+    print("{}-{}-{}{}".format(f_num, f_song_name, f_album, f_ext))
 
     # Minor fixes:
     # Lastly we want to strip off the unnecessary empty spaces, using '.strip()' method:
-    f_title = f_title.strip()
+    f_album = f_album.strip()
+    f_song_name = f_song_name.strip()
     f_ext = f_ext.strip()
 
     # Averting the sorting conflict in between single digit numbers and '10':
@@ -54,5 +58,5 @@ for f in os.listdir():
 
     # Final stage:
     # Since the wished format is accessed; let's pass it into a new variable and rename our files:
-    new_name = "{}-{}{}".format(f_num, f_title, f_ext)
+    new_name = "{}-{}-{}{}".format(f_num, f_song_name, f_album, f_ext)
     os.rename(f, new_name)
