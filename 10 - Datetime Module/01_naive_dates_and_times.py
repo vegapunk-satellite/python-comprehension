@@ -13,13 +13,15 @@ d = datetime.date(
     1524, 5, 5
 )  # (year, month, day) Month and day must not have leading 0. Have to be regular integers.
 print(d)
+print(d.year)  # Accessing the desired date's year individually.
+print(d.month)  # Accessing the desired date's month individually.
+
+
 today = datetime.date.today()  # Built-in method to access date of today.
 print(today)
-print(d.year)  # Accessing the desired date's year individually.
 print(
     today.day
 )  # Accessing the number of a day within its calendar month individually.
-print(d.month)  # Accessing the desired date's month individually.
 
 
 #'.weekday()' and '.isoweekday()' both return a number for each day:
@@ -62,9 +64,13 @@ import datetime
 d_t = datetime.datetime(
     1524, 4, 21, 9, 15, 54, 100011
 )  # (year, month, day, hour, minute, second and microsecond)
+
+
 print(d_t)  # Returns the entire date and time values.
 print(d_t.year)  # Returns only the year value.
 print(d_t.time())  # Returns only the time values.
+
+
 tdelta = datetime.timedelta(hours=12)  # Setting the time delta to twelve hours.
 print(
     d_t + tdelta
@@ -75,14 +81,16 @@ print(
 dt_today = (
     datetime.datetime.today()
 )  # Returns the local date and time without a timezone value.
+print(dt_today)
+
+
 dt_now = (
     datetime.datetime.now()
-)  # Returns a naive date time when the timezone value is left empty such as in current example.
+)  # Returns a naive date time when the timezone value is left empty such as in the current example.
+print(dt_now)
+
+
 dt_utcnow = (
     datetime.datetime.utcnow()
-)  # Returns the time of the UTC-0 but without a timezone value.
-
-
-print(dt_today)
-print(dt_now)
+)  # Returns the current UTC time, but without a timezone value.
 print(dt_utcnow)
