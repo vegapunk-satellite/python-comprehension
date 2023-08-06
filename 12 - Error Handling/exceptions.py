@@ -1,10 +1,12 @@
 # Exceptions and Error Handling in Python:
+
+# When users anticipate sections of their code that might throw an error or an exception;
+# those anticipated errors could be handled with 'try' and 'except' blocks.
 # Users have to be as specific as possible when catching exceptions;
-# because the goal of try/except blocks is not to just get around all of the errors.
-# Try/except blocks meant to catch the errors that users expect and handle them properly.
+# because the goal of try/except blocks is not to just get around all of the possible errors.
+# Try/except blocks meant to catch the errors that users expect and handle them properly...
+
 # Running some code that throws an error; will help users understand the need to use these try/except blocks.
-
-
 # Navigating to the folder where the sample text files exist:
 import os
 
@@ -17,8 +19,6 @@ os.chdir("C:/Users/MSI/Desktop/Records/CS/my_modules/12 - Error Handling/sample 
 
 
 # Instead of prompting out the whole 'FileNotFoundError'; users can simplify the display of errors.
-# When users anticipate sections of their code that might throw an error or an exception;
-# anticipated errors could be handled with 'try' and 'except' blocks.
 try:
     f = open("test_file.txt")  # Wrong file name entered. Will throw an exception.
 except Exception:
@@ -56,14 +56,14 @@ except Exception:  # General exception with lower priority.
     print("Something went wrong.")
 
 
-# In cases users want to just print out the exception instead of custom errors;
-# 'as' command is pretty useful. 'x' and 'y' are just names that are user preferential.
+# In cases users wish to just print out a short version of the built-in exception, instead of custom errors;
+# 'as' command is pretty useful.
 try:
     f = open("test_file.txt")
     # var = bad_var
 except FileNotFoundError as x:  # Catches 'FileNotFoundError'.
     print(x)  # Prompts out the error's own message shortly.
-except Exception as y:
+except Exception as y:  # 'x' and 'y' are just names that are user preferential.
     print(y)
 
 
@@ -82,8 +82,8 @@ else:  # Since no exceptions have been caught, the code within the else clause w
 
 # Finally clause:
 # Even if code will throw an exception; finally clause will still be executed no matter what.
-# So if an action must be executed regardless of the code's success; users can place that in the finally clause.
-# For example when working with a database, users should place the 'close database' command inside the finally clause.
+# So if an action must be executed regardless of the code's success; users can insert it in the finally clause.
+# For example when working with a database, users should place the command that closes the database inside the 'finally' clause.
 try:
     f = open("test_file.txt")  # Wrong file name. Throws an exception.
 except FileNotFoundError as e:  # Exception caught.
@@ -100,8 +100,8 @@ finally:
 # Manually raising exceptions:
 try:
     f = open("corrupt_file.txt")
-    if f.name == "corrupt_file.txt":
-        raise Exception  # Setting a conditional allows users to manually raise an error.
+    if f.name == "corrupt_file.txt":  # Inserting a condition that;
+        raise Exception  #  lets users to manually raise an error.
 except FileNotFoundError as e:
     print(e)
 except Exception as e:  # The exception raised by the user caught here.
