@@ -1,3 +1,7 @@
+# The module contains the four basic arithmetic operations. ('+', '-', '*', '/')
+# Created for testing purposes only.
+
+
 def add(x, y):
     # Addition
     return x + y

@@ -2,8 +2,8 @@
 # Because of the naming convention, the method that users define when testing needs to start with 'test_', or else won't work.
 
 
-import unittest  # A testing module within the Standard Library.
-import calc  # Testing the user script named 'calc.py' that contains four basic arithmetic operators defined.
+import unittest  # Importing a testing module within the Standard Library.
+import calc  # Importing the previously created 'calc.py' script for testing purposes.
 
 
 # Users need to create test cases for the functions that they desire to test.
