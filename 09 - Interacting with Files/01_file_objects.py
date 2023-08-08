@@ -1,7 +1,7 @@
-# File Objects
+# File Objects:
 # Working without the context manager(not recommended):
 # Using built-in 'open' command to open and read the 'test.txt' file;
-# which is located in a sub-directory, hence the usage of the 'os' library.
+# which is located in a sub-directory, hence the usage of the 'os.chdir()' method.
 import os
 
 

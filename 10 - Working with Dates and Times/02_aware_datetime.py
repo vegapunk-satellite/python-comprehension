@@ -1,7 +1,7 @@
 # Aware dates and times let users determine the timezones and keep track of daylight savings.
 # Even though it is a third party package, 'pytz' has been recommended in Python's official documentation at the timezone section.
-# It can be installed within the command prompt via the pip.
-# From our terminal we just need to type in 'pip install pytz'.
+# The package is installed via the command prompt using pip.
+# Within the terminal users just need to type in 'pip install pytz'.
 
 
 # Using 'pytz':
