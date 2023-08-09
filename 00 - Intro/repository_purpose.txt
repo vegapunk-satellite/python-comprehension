@@ -1,16 +1,20 @@
     Hey there, thanks for sparing time and reading the introduction! I am Arca. My purpose for creating this
-repository is to explain the usage of Python in the simplest way, having clear and to the point descriptions.
-Hence i have been making a research of the various python courses online, there are dozens of brilliant tutors
-who publish their courses for free on the internet. But personally i found out that Corey Schafer's python course
-was the best suited for my understanding, of course no disrespect to other creators.
+repository is to explain the usage of Python in the simplest way. Having clear, brief and 'to the point' descriptions.
+Hence I have been making a research of the various python courses online; there are dozens of brilliant tutors
+who publish their courses for free on the internet, but personally I found out that Corey Schafer's python course
+was the best suited for my understanding, of course no disrespect to the other creators.
 
-    That's why I have decided to put up all the code that has been used by Mr. Schafer within that course.
-He does a fantastic job explaining each functionality or command he uses. My goal was to enhance those descriptions
-by tweaking them and adding in some of my own explanations here and there. I believe simplicity is essential
-for new learners to comprehend python. Hope this will help society as more and more people are interested in
-learning automation to use in their daily life, or their work.
+    For that reason I have decided to compile all the code that has been used in that course and edited parts of it with
+my custom data. Mr. Schafer does a fantastic job explaining each command or functionality. My goal was to enhance those 
+descriptions by tweaking them and adding in some of my own explanations. I believe simplicity is essential for new
+learners to comprehend python. Hope my efforts help society; as more and more people are becoming interested in learning
+automation to use in their work or their daily life.
 
-    Special thanks to my tutor Mr. Tayfun Elmas who spared so much of his time and teached me programming.
-And kudos to Mr. Corey Schafer since he was the original creator of these contents.
+    Kudos to Mr. Corey Schafer since he was the original creator of the format. Special thanks to my tutor Mr. Tayfun Elmas
+who spared so much of his time to help me learn programming.
+
+
+
+
 
 Corey Schafer's youtube channel: https://www.youtube.com/@coreyms
