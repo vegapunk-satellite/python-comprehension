@@ -137,7 +137,7 @@ for identity in identities:
 import os
 
 
-# os.rename(file)  # gets tedious every single time to type in 'os.', so for the sake of shortening our code:
+# os.rename(file)  # Gets tedious every single time to type in 'os.', so for the sake of shortening our code:
 from os import rename, remove
 
 
@@ -162,11 +162,13 @@ from html import *
 from glob import *
 
 
-# Both of these libraries have an 'escape' method;
-# but each of those methods have completely different functionalities.
-
+# Both of these libraries have an 'escape' method; but each of those methods have completely different functionalities.
+# print(help(escape))
 
 # It's always better to import explicitly leads to a better readable code, and easier to debug if anything goes wrong.
 # More appropriate way to import the functions that have the same names:
 from html import escape as h_escape
 from glob import escape as g_escape
+
+
+print(help(escape))
