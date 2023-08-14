@@ -35,7 +35,7 @@ class Employee:
 
     def monthly_schedule(
         self, month
-    ):  # Method that pretends to check an employee's schedule from the company website.
+    ):  # Method that pretends to check an employee's schedule from the company's website.
         response = requests.get(f"http://company.com/{self.last}/{month}")
         if response.ok:
             return response.text
