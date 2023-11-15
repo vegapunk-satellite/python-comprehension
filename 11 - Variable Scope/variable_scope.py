@@ -1,4 +1,4 @@
-# Variable scope determines where to access the variables from within the program;
+# Variable scope determines where to access the variables within the program;
 # and what values those variables hold in different contexts.
 # Understanding the variable scope really helps with debugging; when a variable doesn't have the value users expected.
 
@@ -21,7 +21,7 @@ def test():
 test()
 
 
-# Setting a global value from within a local function: (not so convenient)
+# Setting a global value within a local function: (not so convenient)
 # Using the 'global' command lets users alter the variable globally, even if that variable doesn't exist within the code.
 def test_2():
     global x
